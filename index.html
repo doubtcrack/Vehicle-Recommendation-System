@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Recommendation System</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>Vehicle Recommendation System</title>
   </head>
   <body class="bg-gray-100">
     <div
@@ -54,13 +54,13 @@
         </button>
       </div>
       <div id="output" class="hidden">
-        <h2 class="text-2xl font-semibold my-8">Recommended Vehicles:</h2>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 rounded overflow-hidden shadow-lg bg-white p-4"
+        <h2 class="text-xl font-semibold my-8">Recommended Vehicles:</h2>
+        <ul
           id="vehicleList"
+          class="list-disc grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 rounded overflow-hidden shadow-lg bg-white p-4 pl-8"
         >
           <!-- Recommended vehicles will be displayed here -->
-        </div>
+        </ul>
       </div>
     </div>
     <a
