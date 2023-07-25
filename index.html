@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Vehicle Recommendation System</title>
+  </head>
+  <body class="bg-gray-100">
+    <div
+      style="background-image: url('assets/hero-background.jpg')"
+      class="bg-no-repeat bg-cover bg-center py-20"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-center">
+          <h1 class="font-semibold text-white mb-4" style="font-size: 2.5rem">
+            Vehicle Recommendation System
+          </h1>
+        </div>
+        <p class="text-white text-lg flex items-center justify-center">
+          Find the nearest available vehicles based on your location and number
+          of passengers.
+        </p>
+      </div>
+    </div>
+    <div class="container mx-auto p-8 my-8">
+      <div
+        class="flex flex-wrap space-x-4 mb-4 items-center justify-center my-12"
+      >
+        <label for="userLocation" class="font-semibold w-full sm:w-auto"
+          >Your Location ID:</label
+        >
+        <input
+          type="number"
+          id="userLocation"
+          class="rounded-lg p-2 border border-gray-400 w-full sm:w-auto"
+        />
+        <label for="numPassengers" class="font-semibold w-full sm:w-auto"
+          >Number of Passengers:</label
+        >
+        <input
+          type="number"
+          id="numPassengers"
+          class="rounded-lg p-2 border border-gray-400 w-full sm:w-auto"
+        />
+        <button
+          id="recommendBtn"
+          class="px-4 py-2 bg-blue-500 text-white rounded-lg w-full sm:w-auto"
+        >
+          Recommend
+        </button>
+      </div>
+      <div id="output" class="hidden">
+        <h2 class="text-2xl font-semibold my-8">Recommended Vehicles:</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 rounded overflow-hidden shadow-lg bg-white p-4"
+          id="vehicleList"
+        >
+          <!-- Recommended vehicles will be displayed here -->
+        </div>
+      </div>
+    </div>
+    <a
+      href="documentation.html"
+      class="fixed bottom-4 right-4 border-1 border-cyan-500 text-gray-700 py-2 px-4 rounded-lg"
+      >Documentation --></a
+    >
+    <script src="script.js"></script>
+  </body>
+</html>
