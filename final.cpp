@@ -48,7 +48,7 @@ void getRecommendations(int inputLocationId, int numOfPassengers, unordered_map<
     }
 }
 
-int main() 
+int main()
 {
 
     unordered_map<int, Vehicle> vehicles = {
